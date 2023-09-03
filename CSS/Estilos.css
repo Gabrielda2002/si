@@ -15,7 +15,7 @@
   --color-fondo-azul-pizarra-claro: hsl(252, 100%, 67%);
   --color-fondo-azul-real-claro: hsl(241, 81%, 54%);
   --color-circulo-azul-violeta: hsla(256, 72%, 46%, 1);
-  --color-circulo-azul-persa: hsla(241, 72%, 46%, 0);
+  --color-circulo-azul-persa: hsla(241, 72%, 46%, 1);
 }
 
 /* Colores Neutrales */
@@ -29,7 +29,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+
 }
 body{
     font-family: 'Hanken Grotesk', sans-serif;
@@ -38,7 +38,7 @@ body{
 
 
 .padre{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 45%;
     max-width: 1440px;
     margin: 0 auto;
@@ -46,6 +46,7 @@ body{
     margin-top: 11%;
     max-height: 1440px;
     height: 60%;
+
 }
 
 .hijo1{
@@ -56,6 +57,7 @@ body{
     /* border: 1px solid; */
     height: 100%;
     border-radius: 10%;
+    box-shadow: -2px 2px 4px;
 }
 .hijo2{
     background: var(--color-blanco);
@@ -65,6 +67,7 @@ body{
     /* border: 1px solid; */
     height: 100%;
     border-radius: 10%;
+    box-shadow: 1px 1px 10px 0px;
 
 }
 
@@ -74,7 +77,7 @@ body{
     }
     .padre{
         width: 80%;
-        
+
     }
 
 }
@@ -97,19 +100,23 @@ body{
 
 .texto-r{
     color: var(--color-rojo-claro);
-    margin-right: 39%;
+    margin-right: 34%;
+    
 }
 .texto-m{
     color: var(--color-amarillo-anaranjado);
-    margin-right: 40%;
+    margin-right: 35%;
 }
 .texto-v{
     color: var(--color-verde-turquesa);
-    margin-right: 45%;
+    margin-right: 40%;
 }
 .texto-vi{
     color: var(--color-azul-cobalto);
-    margin-right: 46%;
+    margin-right: 40%;
+}
+.img{
+    margin: 4%;
 }
 
 .nieto1, .nieto2, .nieto3, .nieto4{
@@ -121,8 +128,8 @@ body{
     box-sizing: border-box;
     height: 11%;
     border-radius: 10px;
-    padding-top: 2.5%;
-    
+    padding-top: 1%;
+
 
 }
 
@@ -134,13 +141,13 @@ body{
     box-sizing: border-box;
     /* padding: 16%;
     height: 50%; */
-    background-image: linear-gradient(var(--color-circulo-azul-violeta), var(--color-circulo-azul-persa) ); 
+    background-image: linear-gradient(var(--color-circulo-azul-violeta), var(--color-circulo-azul-persa));
 }
 
 .titulo1{
     color: var(--color-lavanda-claro);
     margin: 10%;
-    
+
 }
 
 
@@ -159,7 +166,7 @@ body{
     color: var(--color-lavanda-claro);
     font-weight: 500;
     font-size: 15px;
-    
+
 }
 
 .nieto5{
@@ -168,7 +175,7 @@ body{
     padding-left: 15%;
     padding-right: 15%;
     margin-top: 5%;
-    
+
 }
 .titulo2{
     color: var(--color-blanco);
@@ -187,9 +194,10 @@ body{
     border-radius: 20px;
     height: 10%;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
     color: var(--color-blanco);
-    background: var(--color-amarillo-anaranjado);
+    background: var(--color-circulo-azul-persa);
+    border: 0px;
 }
 .button:hover{
     background-image: linear-gradient(var(--color-circulo-azul-violeta), var(--color-azul-grisaceo-oscuro) );
@@ -212,7 +220,7 @@ body{
     margin: 0 auto;
     /* border: 1px solid black; */
     width: 80%;
-    
+
     margin-top: 20%;
-    
+
 }
